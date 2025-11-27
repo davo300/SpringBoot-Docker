@@ -1,8 +1,2 @@
-# ARM-compatible Java runtime
-FROM eclipse-temurin:21-jdk
-
-WORKDIR /app
-COPY target/demo-0.0.1-SNAPSHOT.jar app.jar
-
+FROM 321495243143.dkr.ecr.ca-central-1.amazonaws.com/spring-demo:latest
 EXPOSE 8080
-ENTRYPOINT ["java", "-jar", "app.jar"]
