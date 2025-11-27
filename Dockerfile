@@ -1,2 +1,8 @@
-FROM 321495243143.dkr.ecr.ca-central-1.amazonaws.com/spring-demo:latest
+FROM eclipse-temurin:21-jdk
+
+WORKDIR /app
+
+COPY target/*.jar app.jar
+
 EXPOSE 8080
+ENTRYPOINT ["java", "-jar", "app.jar"]
