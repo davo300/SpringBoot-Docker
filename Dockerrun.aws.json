@@ -1,13 +1,14 @@
 {
     "AWSEBDockerrunVersion": 1,
     "Image": {
-      "Name": "321495243143.dkr.ecr.ca-central-1.amazonaws.com/spring-demo:latest",
-      "Update": "true"
+      "Name": "321495243143.dkr.ecr.ca-central-1.amazonaws.com/spring-demo:latest"
     },
     "Ports": [
       {
-        "ContainerPort": "8080"
+        "ContainerPort": 8080,
+        "HostPort": 8080
       }
-    ]
+    ],
+    "Logging": "/var/log/spring"
   }
   
