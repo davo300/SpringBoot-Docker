@@ -1,0 +1,26 @@
+### CREATE USER
+POST http://localhost:8080/users
+Content-Type: application/json
+
+{
+  "name": "Matt",
+  "email": "matt@example.com"
+}
+
+### GET ALL USERS
+GET http://localhost:8080/users
+
+### GET USER BY ID
+GET http://localhost:8080/users/1
+
+### UPDATE USER
+PUT http://localhost:8080/users/1
+Content-Type: application/json
+
+{
+  "name": "Matt Updated",
+  "email": "new@example.com"
+}
+
+### DELETE USER
+DELETE http://localhost:8080/users/1
