@@ -1,5 +1,5 @@
 {
-    "AWSEBDockerrunVersion": 1,
+    "AWSEBDockerrunVersion": "1",
     "Image": {
       "Name": "321495243143.dkr.ecr.ca-central-1.amazonaws.com/spring-demo:latest",
       "Update": "true"
@@ -10,3 +10,4 @@
       }
     ]
   }
+  
